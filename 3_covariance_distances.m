@@ -20,10 +20,10 @@ basic = ["LYS", "ARG"];
 polar = ["SER", "THR", "ASN", "GLN",  "TYR"];
 
 % Load PSF files for different variants
-wt_psf = read_psf('Data/wt_aligned.psf');
-alpha_psf = read_psf('Data/n501y_aligned.psf');
-beta_psf = read_psf('Data/triple_aligned.psf');
-omicron_psf = read_psf('Data/omicron_aligned.psf');
+wt_psf = read_psf('Data/WT/wt_aligned.psf');
+alpha_psf = read_psf('Data/Alpha/alpha_aligned.psf');
+beta_psf = read_psf('Data/Beta/beta_aligned.psf');
+omicron_psf = read_psf('Data/Omicron/omicron_aligned.psf');
 
 % Find attractive pairs for WT variant
 [i1 n1] = find(cov_wt_d > 0);
