@@ -39,10 +39,10 @@ rbd_int = 445:506; % RBD interaction region
 nb_int = [26:32 52:56 99:116]; % N-terminal domain interaction region
 
 % Load DCD files for different variants
-wt = readdcd("Data/wt_aligned.dcd",1:323); % Wild-type
-alpha = readdcd("Data/n501y_aligned.dcd",1:323); % Alpha variant
-beta = readdcd("Data/triple_aligned.dcd",1:323); % Beta variant
-omicron = readdcd("Data/omicron_aligned.dcd",1:323); % Omicron variant
+wt = readdcd("Data/WT/wt_aligned.dcd",1:323); % Wild-type
+alpha = readdcd("Data//Alpha/alpha_aligned.dcd",1:323); % Alpha variant
+beta = readdcd("Data/Beta/beta_aligned.dcd",1:323); % Beta variant
+omicron = readdcd("Data/Omicron/omicron_aligned.dcd",1:323); % Omicron variant
 
 % Compute covariance matrices for each variant
 cov_wt = compute_covariance(wt);
